@@ -1,4 +1,4 @@
-const API = '/productos';
+const API = 'https://crud-backend-h92w.onrender.com/productos';
 
 // Cargar productos
 function cargarProductos() {
