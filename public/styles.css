@@ -1,0 +1,139 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family:'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #eef2f7, #d9e2ec);
+    padding: 30px;
+}
+
+/* TITULO */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #f930b9;
+}
+
+/* CONTENEDOR FORMULARIO */
+.formulario {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* INPUTS */
+.formulario input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 180px;
+    transition: all 0.3s ease;
+}
+
+.formulario input:focus {
+    border-color: #bf00ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(187, 0, 255, 0.3);
+}
+
+/* BOTÓN PRINCIPAL */
+.formulario button {
+    background: linear-gradient(135deg, #d93cee, #d52a6f);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+}
+
+/* HEADER TABLA */
+thead {
+    background: linear-gradient(135deg, #c300ff, #3c00b3);
+    color: white;
+}
+
+th {
+    padding: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* CELDAS */
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* FILAS */
+tr {
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+/* BOTONES DINÁMICOS */
+td button {
+    margin: 2px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* EDITAR */
+td button:first-child {
+    background: #ffc107;
+}
+
+/* ELIMINAR */
+td button:last-child {
+    background: #dc3545;
+    color: white;
+}
+
+/* MENSAJE VACÍO */
+tbody tr td[colspan] {
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario input {
+        width: 100%;
+    }
+}
