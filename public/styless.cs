@@ -48,3 +48,28 @@ th {
     background: #007bff;
     color: white;
 }
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 3px solid #007bff;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.footer-content em {
+    color: #3498db;
+    font-weight: bold;
+}

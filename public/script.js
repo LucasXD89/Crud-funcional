@@ -33,9 +33,16 @@ function editar(producto) {
     document.getElementById('stock').value = producto.stock;
 }
 
-// Limpiar formulario
+// Limpiar formulario (para editar)
 function limpiarFormulario() {
     document.getElementById('id').value = '';
+    document.getElementById('nombre').value = '';
+    document.getElementById('precio').value = '';
+    document.getElementById('stock').value = '';
+}
+
+// Limpiar los 3 campos (nombre, precio, stock)
+function limpiar() {
     document.getElementById('nombre').value = '';
     document.getElementById('precio').value = '';
     document.getElementById('stock').value = '';
